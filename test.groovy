@@ -1,4 +1,7 @@
-@Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7')
+@Grapes([
+    @Grab('org.codehaus.groovy.modules.http-builder:http-builder:0.7'),
+    @Grab('org.apache.httpcomponents:httpmime:4.5.1')
+])
 import groovyx.net.http.HTTPBuilder;
 
 def firstTest() {
